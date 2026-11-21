@@ -1,14 +1,8 @@
 \# Sweety – Blood Glucose Tracker
 
-
-
 A full-stack web application that helps users record, manage, and monitor their daily blood glucose readings.
 
-
-
 \## Features
-
-
 
 \- User registration and login
 
@@ -44,11 +38,7 @@ A full-stack web application that helps users record, manage, and monitor their 
 
 \- User-specific data access
 
-
-
 \## Technology Stack
-
-
 
 \*\*Frontend\*\*
 
@@ -59,8 +49,6 @@ A full-stack web application that helps users record, manage, and monitor their 
 \- Axios
 
 \- CSS
-
-
 
 \*\*Backend\*\*
 
@@ -76,11 +64,7 @@ A full-stack web application that helps users record, manage, and monitor their 
 
 \- bcryptjs
 
-
-
 \## Project Structure
-
-
 
 ```text
 
@@ -126,15 +110,9 @@ Sweety-Blood-Glucose-Tracker/
 
 ```
 
-
-
 \## Installation and Setup
 
-
-
 \### 1. Clone the repository
-
-
 
 ```bash
 
@@ -144,11 +122,7 @@ cd Sweety-Blood-Glucose-Tracker
 
 ```
 
-
-
 \### 2. Backend setup
-
-
 
 ```bash
 
@@ -158,27 +132,15 @@ npm install
 
 ```
 
-
-
 Create a `.env` file using `.env.example` and configure your PostgreSQL credentials and JWT secret.
-
-
 
 \### 3. Database setup
 
-
-
 Create a PostgreSQL database named `sweety\_db`.
-
-
 
 Create the required `users` and `readings` tables using the database SQL scripts.
 
-
-
 \### 4. Start the backend
-
-
 
 ```bash
 
@@ -186,23 +148,13 @@ node server.js
 
 ```
 
-
-
 Backend runs at:
-
-
 
 `http://localhost:5000`
 
-
-
 \### 5. Frontend setup
 
-
-
 Open another terminal:
-
-
 
 ```bash
 
@@ -214,19 +166,11 @@ npm run dev
 
 ```
 
-
-
 Frontend runs at:
-
-
 
 `http://localhost:5173`
 
-
-
 \## API Endpoints
-
-
 
 | Method | Endpoint | Description |
 
@@ -252,15 +196,9 @@ Frontend runs at:
 
 | GET | `/api/reports/previous-month` | Previous-month report |
 
-
-
 Reading and report endpoints require JWT authentication.
 
-
-
 \## Validation Rules
-
-
 
 \- Glucose values must be integers between 40 and 600 mg/dL.
 
@@ -272,21 +210,40 @@ Reading and report endpoints require JWT authentication.
 
 \- Users can access only their own readings.
 
-
-
 \## Author
-
-
 
 Maria Melwin
 
-
-
 \## GitHub Repository
-
-
 
 https://github.com/Maria-melwin/Sweety-Blood-Glucose-Tracker
 
+## Application Screenshots
 
+### Login Page
 
+![Login Page](screenshots/login.png)
+
+### Registration Page
+
+![Registration Page](screenshots/register.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Add Glucose Reading
+
+![Add Reading](screenshots/add-reading.png)
+
+### Readings Management
+
+![Readings](screenshots/readings.png)
+
+### Daily Report
+
+![Daily Report](screenshots/daily-report.png)
+
+### Monthly Report
+
+![Monthly Report](screenshots/monthly-report.png)
