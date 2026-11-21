@@ -381,3 +381,94 @@ th {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/* LOGIN AND REGISTER PAGE */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #e8f5ee, #f4f8f6);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  color: #16845e;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.auth-card p {
+  color: #718078;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.auth-card label {
+  display: block;
+  color: #263b35;
+  font-weight: 600;
+  margin: 16px 0 8px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d5ded9;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #16845e;
+  box-shadow: 0 0 0 3px rgba(22, 132, 94, 0.1);
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 22px;
+  background: #16845e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #116b4b;
+}
+
+.auth-card button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-card a {
+  color: #16845e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+.auth-card .error-message {
+  text-align: center;
+}
